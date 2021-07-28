@@ -1,0 +1,131 @@
+#page-room {
+  header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e2e2e2;
+
+    .content {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      > img {
+        max-height: 2.8rem;
+      }
+
+      > div {
+        display: flex;
+        gap: 1rem;
+
+        button {
+          height: 2.5rem;
+        }
+      }
+    }
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .modal-content {
+        height: 50%;
+        width: 50%;
+        background-color: #fff;
+        border-radius: 0.5rem;
+
+        .modal-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 5rem;
+          gap: 1rem;
+          h1 {
+            margin-top: 0.5rem;
+            font-size: 2.5rem;
+          }
+
+          p {
+            font-size: 1.5rem;
+            color: var(--gray);
+          }
+        }
+
+        .buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 3rem;
+          gap: 1rem;
+
+          button {
+            height: 3.2rem;
+            font-size: 1rem;
+            padding: 0 2rem;
+            border-radius: 0.5rem;
+            transition: filter 0.2s;
+
+            &:hover {
+              filter: brightness(0.8);
+            }
+          }
+
+          .cancel {
+            border: none;
+            background: #dbdcdd;
+            color: var(--gray-50);
+          }
+
+          .close-room {
+            border: none;
+            background: #e73f5d;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .room-title {
+      margin: 2rem 0 1.5rem;
+      display: flex;
+      align-items: center;
+
+      h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5rem;
+        color: var(--black);
+      }
+
+      span {
+        margin-left: 0.75rem;
+        background: #e559f9;
+        border-radius: 9999px;
+        padding: 0.5rem 1rem;
+        color: #fff;
+        font-weight: 500;
+        font-size: 0.875rem;
+      }
+    }
+
+    .question-list {
+      margin-top: 2rem;
+
+      .message {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
